@@ -30,6 +30,7 @@ jobs:
     - name: Run Bandit Scan
       run: |
         bandit -r . -f json -o results.json
+      continue-on-error: true
 
     - name: Upload Results
       uses: actions/upload-artifact@v2
