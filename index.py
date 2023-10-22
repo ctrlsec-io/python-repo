@@ -16,7 +16,7 @@ def evaluate():
     # Vulnerability 3: Use of "eval"
     expression = request.form.get('expression')
     result = eval(expression)
-    return f'Result: {result}'
+    return f'Ressult: {result}'
 
 @app.route('/unsafe_deserialization')
 def unsafe_deserialization():
